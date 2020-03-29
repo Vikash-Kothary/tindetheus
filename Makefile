@@ -34,3 +34,8 @@ lint-tindetheus:
 tests-tindetheus:
 	@cd ${TINDETHEUS_ROOT} && \
 	pytest -p no:warnings --doctest-modules tests/tests.py
+
+.PHONY: tests-tindetheus #: Run tests.
+notebooks-tindetheus:
+	@cd ${TINDETHEUS_ROOT} && \
+	jupyter notebook --notebook-dir=./notebooks
