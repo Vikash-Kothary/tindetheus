@@ -1,7 +1,6 @@
 #/bin/make
 #@ Tindetheus
 
-
 TINDETHEUS_ROOT := ${PWD}
 TINDETHEUS_NAME := "$(shell python3 ${TINDETHEUS_ROOT}/setup.py --name)"
 TINDETHEUS_VERSION := "$(shell python3 ${TINDETHEUS_ROOT}/setup.py --version)"
